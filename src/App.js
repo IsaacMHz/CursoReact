@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Galeria from "./components/Galeria/Galeria";
+import GaleriaItem from "./components/GaleriaItem/GaleriaItem";
+
+let imagenes = [
+  require('./imagenes/Camion.jpg'),
+  require('./imagenes/Soumaya.jpg'),
+  require('./imagenes/Torre.jpg')
+];
+
+let texto = [
+  'Transporte','Museos','Celebraciones'
+];
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <h1>Ciudad de México</h1>
+
+      <Galeria>
+        
+        {imagenes.map((imagen, index) => (
+          <GaleriaItem key={index} imagen ={imagen} texto = {texto[index]}/>
+        ))}
+      
+      </Galeria>
+
     </div>
   );
 }

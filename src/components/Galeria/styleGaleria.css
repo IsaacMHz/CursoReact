@@ -1,0 +1,6 @@
+.contenedor-flex{
+display: flex;
+justify-content: space-evenly;
+margin-top: 30px;
+flex-wrap: wrap;
+}

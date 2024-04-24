@@ -1,0 +1,43 @@
+.contenedor-item {
+    position: relative;
+    text-align: center;
+    background-color: #9F2241;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 12px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px 3px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 12px 3px rgba(0,0,0,0.75);
+  }
+  
+  .contenedor-item img {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px 20px 0 0;
+    transition: opacity 0.4s ease; 
+  }
+  
+  .contenedor-item:hover img {
+    opacity: 0; 
+  }
+  
+  .contenedor-item:hover .texto {
+    display: block; 
+  }
+  
+  .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: none; 
+  }
+  
+  .Transporte {
+    background-color: #235B4E;
+  }
+  
+  .Museos {
+    background-color: #DDC9A3;
+  }
